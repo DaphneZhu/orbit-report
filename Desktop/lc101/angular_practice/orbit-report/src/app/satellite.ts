@@ -15,14 +15,12 @@ export class Satellite {
     }   
     
     shouldShowWarning() {
-        if (this.type.toUpperCase === "Space Debris".toUpperCase) {
-            this.showWarning = true; 
+        if (this.type.toUpperCase() === "Space Debris".toUpperCase()) {
+            return true; 
         }
         else {
-            this.showWarning = false; 
+            return false; 
         }
-        console.log(this.type);
-        return this.showWarning;
     }
 }
 
