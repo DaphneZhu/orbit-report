@@ -28,7 +28,9 @@ export class AppComponent {
               let fetchedSatellitesKeys = ["name", "type", "launchDate", "orbitType", "operational"];
               let sortedKeys = ["name", "type", "operational", "orbitType", "operational"];
               for (let i = 0; i < data.satellites.length; i ++) {
-                let satellite = new Satellite(fetchedSatellites[i].name, fetchedSatellites[i].type,fetchedSatellites[i].launchDate,fetchedSatellites[i].orbitType, fetchedSatellites[i].operational);
+                //let satellite = new Satellite(fetchedSatellites[i].name, fetchedSatellites[i].type, fetchedSatellites[i].operational, fetchedSatellites[i].orbitType, fetchedSatellites[i].launchDate);
+                let satellite = new Satellite(fetchedSatellites[i].name, fetchedSatellites[i].type, fetchedSatellites[i].launchDate, fetchedSatellites[i].orbitType, fetchedSatellites[i].operational);
+                
                 this.sourceList.push(satellite);
     
                 
